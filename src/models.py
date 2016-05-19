@@ -3,7 +3,7 @@ from __future__ import print_function
 
 __author__="Scott Hendrickson, Josh Montague"
 __email__="shendrickson@twitter.com"
-__license__="http://creativecommons.org/licenses/by-sa/3.0/"
+__license__="https://opensource.org/licenses/MIT"
 
 from inspect import cleandoc
 import sys
