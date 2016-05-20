@@ -2,13 +2,11 @@
 
 Document (PDF and TeX source) and associated Python source code for modeling [the Social Media Pulse](doc/pulse.pdf), a statistical model that describes observed Tweet activity volume in the period after a large number of people witness a sudden, unexpected event. An accompanying blog post on the paper and model can be found [here](TBD). 
 
-<center>
-<img src="doc/img/meteor-shower.png" alt="Social Media Pulse example" title="Social Media Pulse: Meteor" width="500">
-</center>
+<img src="doc/img/meteor-shower.png" alt="Social Media Pulse example" title="Social Media Pulse: Meteor" width="600">
 
-## Document 
+## White Paper 
 
-The PDF document was generated on OS X with ``pdflatex`` and ``BibTeX``. The easiest way to install the MacTeX distribution is through the download links at [tug.org](https://tug.org/mactex/). 
+The [PDF document](doc/pulse.pdf) was generated on OS X with ``pdflatex`` and ``BibTeX``. The easiest way to install the MacTeX distribution is through the binary download procedure at [tug.org](https://tug.org/mactex/). 
 
 ### Usage 
 
@@ -40,4 +38,8 @@ For fast iteration, the output of ``smp.py`` also plays nicely with [``pandashel
 ```
 [src] $ cat test.csv | python smp.py | p.plot -x scaled_x -y scaled_y scaled_fit 
 ```
+
+### Extending the models
+
+If you'd like to add additional models to the code, the ``BaseModel`` class in ``models.py`` shows the primary methods that you should override. Subsequently, if running the ``smp.py`` code from the command line, you will need to modify the ``__main__`` code to create an instance of ``models.YourNewModel`` instead of the ``models.GammaModel``. 
 
