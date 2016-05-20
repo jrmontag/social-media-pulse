@@ -39,7 +39,3 @@ For fast iteration, the output of ``smp.py`` also plays nicely with [``pandashel
 [src] $ cat test.csv | python smp.py | p.plot -x scaled_x -y scaled_y scaled_fit 
 ```
 
-### Extending the models
-
-If you'd like to add additional models to the code, the ``BaseModel`` class in ``models.py`` shows the primary methods that you should override. Subsequently, if running the ``smp.py`` code from the command line, you will need to modify the ``__main__`` code to create an instance of ``models.YourNewModel`` instead of the ``models.GammaModel``. 
-
