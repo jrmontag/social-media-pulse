@@ -3,7 +3,7 @@ from __future__ import print_function
 
 __author__="Scott Hendrickson, Josh Montague"
 __email__="shendrickson@twitter.com"
-__license__="https://opensource.org/licenses/MIT"
+__license__="APL 2.0, http://www.apache.org/licenses/LICENSE-2.0"
 
 
 import csv
