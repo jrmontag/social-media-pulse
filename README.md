@@ -29,7 +29,7 @@ This code falls under the [Apache 2.0 license](http://www.apache.org/licenses/LI
  
 ### Usage 
 
-The main fitting utility ``smp.py`` is primarily used from the command line, though is also capable of being imported. For a list of the available options, run with the ``-h`` flag. Additional command-line flags are used to modify the behavior of the model, including initializing parameters, and specifiying non-standard positions for data columns. 
+The main fitting utility ``smp.py`` is used from the command line within this repository. For a list of the available options, run with the ``-h`` flag. Additional command-line flags are used to modify the behavior of the model, including initializing parameters, and specifiying non-standard positions for data columns. 
 
 Data can be read from the shell ``stdin`` or from a file (by way of a passed filepath). For example, the following command will fit the included test data to the SMP model, writing the input and corresponding fit data to ``fit-data.csv`` and the summary fit parameters to ``fit-results.txt``:
 
