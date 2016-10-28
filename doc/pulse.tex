@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[group-separator={,}]{siunitx}
+\usepackage{pdfpages}
 \usepackage{tikz}
 \usepackage{url}
 \usepackage{xfrac}
@@ -23,14 +24,16 @@
 \affil[]{Twitter, Inc.}
 
 \begin{document}
-\maketitle
+
+\includepdf[pages={-}]{front-cover.pdf} 
+% no title if cover page
+%\maketitle     
 
 %%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:intro}
 
-% context + motivation
-% users share experience ==> descriptive / predictive data models 
+% context + motivation (experience => descrip/predictive models)
 In the digitally connected world, social media platforms are often the primary means by which people share their observations and perspectives during significant events. Such platforms present low-friction ways to share their point-of-view experiences, whether in simple text or visual media (photos, videos, gifs, etc.). Because of this ease of sharing, the aggregate data produced by the platform's users is a rich source of insight into broad, cultural behavior. At times, we can even observe the ways by which these behaviors manifest in platform-specific patterns. Given enough data that displays these patterns, we can begin to develop models based on them.   
 
 An analyst can be prepared to produce both descriptive and predictive results based on observed data by empowering them with models that describe the users and the users' responses to events. Obtaining a model representation of the data enables the analyst to compare parameters across multiple events (e.g., time scales, coefficient magnitudes); or, for a single event, one could compare similar parameters across multiple social platforms. Such a model could also be a component of broader trend- or event-detection methods, potentially assisting the analyst in handling real-time news media or public relations. 
@@ -362,4 +365,5 @@ The latest version of this document and supporting code can be found on GitHub.\
 \bibliography{IEEEabrv,refs-SMP} 
 
 % fin
+\includepdf[pages={-}]{back-cover.pdf} 
 \end{document}
