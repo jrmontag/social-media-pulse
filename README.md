@@ -1,6 +1,6 @@
 # The Social Media Pulse 
 
-Document (PDF and TeX source) and associated Python source code for modeling [the Social Media Pulse](doc/pulse.pdf), a statistical model that describes observed Tweet activity volume in the period after a large number of people witness a sudden, unexpected event. An accompanying blog post on the paper and model can be found [here](TBD). 
+Document (PDF and TeX source) and associated Python source code for modeling [the Social Media Pulse](doc/pulse.pdf), a statistical model that describes observed Tweet activity volume in the period after a large number of people witness a sudden, unexpected event. An accompanying blog post on the paper and model can be found [here](https://blog.twitter.com/2016/expecting-the-unexpected). 
 
 <img src="doc/img/meteor-shower.png" alt="Social Media Pulse example" title="Social Media Pulse: Meteor" width="600">
 
